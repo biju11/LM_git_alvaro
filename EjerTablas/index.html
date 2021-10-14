@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>TABLAS</h1>
+
+    <!-- para aplicar estilos a la tabla hay que definir tamaño, forma y color -->
+    <!-- primer TR va con filas TH como cabeceras de columna -->
+    <!-- CAPTION aporta un titulo a la tabla -->
+    <!-- la fila de cabecera va dentro de THEAD -->
+
+    <!-- PADDING pertenece a style y crea margenes internos en la celda-->
+    <!-- MARGIN aplica margenes externos a la tabla (existen top, left, right y bottom) -->
+
+    <table rules="groups" style="border: 3px groove crimson; border-collapse: collapse;">
+        <caption>TituloDeLaTabla</caption>
+        <thead>
+            <tr>
+                <th><span>Lunes</span></th>
+                <th><span>Martes</span></th>
+                <th><span>Miercoles</span></th>
+            </tr>
+        </thead>
+
+<!-- con COLSPAN="x" se pueden unir celdas horizontalmente-->
+<!-- ROWSPAN="x" une celdas verticalmente-->
+<!-- Se pueden anidar tablas dentro de celdas -->
+
+        <tbody>
+            <tr>
+                <td colspan="3"><span>----------|------------|-----------------</span></td>
+
+            </tr>
+            <tr>
+                <td><span>4</span></td>
+                <td rowspan="2"><span>...</span></td>    
+                <td><span>6</span></td>
+            </tr>
+            <tr>
+                <td><span>7</span></td>
+    
+                <td><span>9</span></td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td><span>pie</span></td>
+                <td><span>pie</span></td>    
+                <td><span>pie</span></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
