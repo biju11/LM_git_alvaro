@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    
+    <div style="height: 600px; width: 600px; background-color: darkkhaki;">
+        <h1 style="text-align: center;">Formulario do Diavlos</h1>
+        <form action="register.php" method="get">
+            <table>
+                <tr>
+                    <td><label for="nombre">Nombre</label></td>
+                    <td><input type="text" name="Nombre" value="" placeholder="Introduzca su puto nombre"></td>
+                </tr>
+                <tr>
+                    <td><label for="Apellido 1">Apellido 1</label></td>
+                    <td><input type="text" name="Apellidos" value=""></td>
+                </tr>
+                <tr>
+                    <td><label for="pword">Contraseña</label></td>
+                    <td><input type="password" placeholder="aqui su contraseña"> </td>
+                </tr>
+
+                <tr>
+                    <td><label for="mayoria_edad">Mayor de edad?</label></td>
+                    <td><input type="radio" name="pregunta" id="pregunta" value="si"><span>Sí</span></td>
+                    <td><input type="radio" name="pregunta" id="pregunta" value="no" checked><span>No</span></td>
+                </tr>
+
+                <tr>
+                    <td><label for="TyC">Está de acuerdo con los terminos de uso?</label></td>
+                    <td><input type="checkbox" name="Sí" id="check_deacuerdo" required><span>Estoy de acuerdo</span></td>
+                </tr>
+
+                <tr>
+                    <td><label for="Provincia">Seleccione su provincia de nacimiento</label></td>
+                    <td>
+                        <!-- Menu Desplegable -->
+                        <select name="provincias" id="provincias">
+                            <option value="default">Seleccione...</option>
+                            <option value="Sev">Sevilla</option>
+                            <option value="Cor">Córdoba</option>
+                            <option value="Cad">Cadiz</option>
+                            <option value="Gra">Granada</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Description">Descripción</label></td>
+                    <td>
+                        <textarea name="Descripcion" id="Description" cols="20" rows="6" maxlength="140"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Edad">Edad</label></td>
+                    <td>
+                        <input type="number" name="Edad" id="Edad" min="0" max="30">
+                    </td>
+                    <td><span></span></td>
+                </tr>
+                <tr>
+                    <td><span>Barra de búsqueda</span><input type="search"></td>
+                    <td><span>telefono</span><input type="tel"></td>
+                </tr>
+
+                <tr>
+                    <td> <input type="reset" value="Borrar"> </td>
+                    <td><input type="submit"></td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+<!-- method: get muestra la informacion del formulario en la URL -->
+<!-- method: post cifra la informacion para que no aparezca "desnuda en la URL" -->
+<!-- 
+    Input:
+    - value es valor por defecto
+    - placeholder es para desplegar instrucciones sobre el campo
+    - readonly es para mostrar un campo pero no para modificarlo
+    - size aplica numero maximo de caracteres
+    - autofocus aplica la funcion de que auto salte de campo en campo con el tabulador
+    - on... son funciones que sucederán cuando termine un evento
+    - onblur
+    - 
+ -->
+
+
+
+</body>
+</html>
