@@ -10,6 +10,11 @@
 </head>
 <body>
     
+
+<!-- method: get muestra la informacion del formulario en la URL -->
+<!-- method: post cifra la informacion para que no aparezca "desnuda en la URL" -->
+
+
     <div style="height: 600px; width: 600px; background-color: darkkhaki;">
         <h1 style="text-align: center;">Formulario do Diavlos</h1>
         <form action="register.php" method="get">
@@ -20,12 +25,17 @@
                 </tr>
                 <tr>
                     <td><label for="Apellido 1">Apellido 1</label></td>
-                    <td><input type="text" name="Apellidos" value=""></td>
+                    <td><input type="text" name="Apellidos" pattern="[A-Z]{12}[0-9]{4}"></td>
                 </tr>
+                <!-- ESTOS SON CAMPOS DE TEXTO PLANO -->
+
+
                 <tr>
                     <td><label for="pword">Contraseña</label></td>
                     <td><input type="password" placeholder="aqui su contraseña"> </td>
                 </tr>
+                <!-- CAMPO PARA CONTRASEÑA, SALE TAPADA -->
+
 
                 <tr>
                     <td><label for="mayoria_edad">Mayor de edad?</label></td>
@@ -41,7 +51,7 @@
                 <tr>
                     <td><label for="Provincia">Seleccione su provincia de nacimiento</label></td>
                     <td>
-                        <!-- Menu Desplegable -->
+                        <!-- Menu Desplegable select raiz, option cada opcion-->
                         <select name="provincias" id="provincias">
                             <option value="default">Seleccione...</option>
                             <option value="Sev">Sevilla</option>
@@ -70,6 +80,12 @@
                 </tr>
 
                 <tr>
+                    <td><label for="fecha">Fechas:</label></td>
+                    <td><input type="date" name="fecha1" id="fecha1"></td>
+                    <td><input type="time" name="fecha2" id="fecha2"></td>
+                </tr>
+
+                <tr>
                     <td> <input type="reset" value="Borrar"> </td>
                     <td><input type="submit"></td>
                 </tr>
@@ -77,8 +93,6 @@
 
         </form>
     </div>
-<!-- method: get muestra la informacion del formulario en la URL -->
-<!-- method: post cifra la informacion para que no aparezca "desnuda en la URL" -->
 <!-- 
     Input:
     - value es valor por defecto
@@ -90,6 +104,8 @@
     - onblur
     - 
  -->
+
+
 
 
 
