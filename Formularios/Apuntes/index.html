@@ -12,46 +12,75 @@
     
 
 <!-- method: get muestra la informacion del formulario en la URL -->
-<!-- method: post cifra la informacion para que no aparezca "desnuda en la URL" -->
+<!-- method: post NO la informacion para que no aparezca "desnuda en la URL" -->
+<!-- LABEL FOR INDICAREMOS EL ID AL QUE ESTA RELACIONADO ESTE TEXTO, SI CLICAMOS EN EL TEXTO PONDRA EL CURSOR EN EL CAMPO -->
+<!-- REQUIRED ES PARA INDICAR QUE ES NECESARIO -->
 
 
-    <div style="height: 600px; width: 600px; background-color: darkkhaki;">
+    <div style="height: 700px; width: 800px; background-color: darkkhaki; margin: auto;">
         <h1 style="text-align: center;">Formulario do Diavlos</h1>
         <form action="register.php" method="get">
             <table>
                 <tr>
                     <td><label for="nombre">Nombre</label></td>
-                    <td><input type="text" name="Nombre" value="" placeholder="Introduzca su puto nombre"></td>
+                    <td><input id="nombre" type="text" name="nombre" value="" placeholder="Introduzca su puto nombre" autofocus></td>
                 </tr>
                 <tr>
                     <td><label for="Apellido 1">Apellido 1</label></td>
-                    <td><input type="text" name="Apellidos" pattern="[A-Z]{12}[0-9]{4}"></td>
+                    <td><input type="text" name="Apellidos" pattern="[A-Z]{12}[0-9]{4}" id="Apellido 1"></td>
+                    
                 </tr>
+
+
                 <!-- ESTOS SON CAMPOS DE TEXTO PLANO -->
+                <!-- READONLY ES UN CAMPO FIJO NO MODIFICABLE, CON VALOR POR DEFECTO O NO -->
+                <!-- NAME ES UN ATRIBUTO QUE SERA INDISPENSABLE PARA QUE PHP CAPTURE LA INFORMACION -->
+                <!-- EL ID SIRVE PARA JAVASCRIPT -->
+                <!-- ONKEYUP SIRVE PARA PROGRAMAR UN EVENTO UNA VEZ DEJAS DE PULSAR UN BOTON -->
+                <!-- PLACEHOLDER ES PARA PONER UNA INSTRUCCION SOBRE EL CAMPO DE TEXTO, SE BORRA AL ESCRIBIR -->
+                <!-- VALUE ES VALOR POR DEFECTO SOBRE EL CAMPO (TEXTO/"NUMEROS") -->
+                <!-- AUTOFOCUS SIRVE PARA PONER EL CURSOR EN EL CAMPO DONDE LO PONGAMOS RECIEN LLEGUEMOS AL FORMULARIO -->
+                <!-- MAXLENGTH SIRVE PARA DEFINIR UN MAXIMO DE CARACTERES -->
+
+
+
 
 
                 <tr>
                     <td><label for="pword">Contraseña</label></td>
-                    <td><input type="password" placeholder="aqui su contraseña"> </td>
+                    <td><input type="password" placeholder="aqui su contraseña" id="pword"> </td>
                 </tr>
                 <!-- CAMPO PARA CONTRASEÑA, SALE TAPADA -->
+
+
 
 
                 <tr>
                     <td><label for="mayoria_edad">Mayor de edad?</label></td>
                     <td><input type="radio" name="pregunta" id="pregunta" value="si"><span>Sí</span></td>
-                    <td><input type="radio" name="pregunta" id="pregunta" value="no" checked><span>No</span></td>
+                    <td><input type="radio" name="pregunta" id="pregunta" value="no"><span>No</span></td>
                 </tr>
+                <!-- aqui NO se modifica el NAME y el ID para que solo se seleccione uno de ellos -->
+                <!-- CHECKED ES EL TICK POR DEFECTO CUANDO TIENES QUE MARCAR UNA OPCION-->
+                <!-- NAME TIENE QUE TENER MISMO VALOR PARA QUE SOLO SE PUEDA ELEGIR UNA  DE TODAS LAS QUE PONGAMOS-->
+
+
+
 
                 <tr>
                     <td><label for="TyC">Está de acuerdo con los terminos de uso?</label></td>
                     <td><input type="checkbox" name="Sí" id="check_deacuerdo" required><span>Estoy de acuerdo</span></td>
                 </tr>
+                <!-- CHECKBOX ES UN TICK MARCABLE -->
+
+
+
 
                 <tr>
                     <td><label for="Provincia">Seleccione su provincia de nacimiento</label></td>
                     <td>
-                        <!-- Menu Desplegable select raiz, option cada opcion-->
+                        <!-- SELECT CREA UN MENU DESPLEGABLE -->
+                        <!-- OPTION cada opcion-->
                         <select name="provincias" id="provincias">
                             <option value="default">Seleccione...</option>
                             <option value="Sev">Sevilla</option>
@@ -70,7 +99,7 @@
                 <tr>
                     <td><label for="Edad">Edad</label></td>
                     <td>
-                        <input type="number" name="Edad" id="Edad" min="0" max="30">
+                        <input type="number" name="Edad" id="Edad" min="0" max="30" value="18">
                     </td>
                     <td><span></span></td>
                 </tr>
@@ -86,8 +115,8 @@
                 </tr>
 
                 <tr>
-                    <td> <input type="reset" value="Borrar"> </td>
-                    <td><input type="submit"></td>
+                    <td><input type="reset" value="Borrar"> </td> <!-- CONFIGURADO EN TYPE PARA BORRAR TODO LO ESCRITO -->
+                    <td><input type="submit"></td> <!-- BOTON PARA ENVIAR FORMULARIO -->
                 </tr>
             </table>
 
