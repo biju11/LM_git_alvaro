@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="El Titulo de la Web">
+    <meta name="robots" content="NoFollow, NoIndex">
+    <meta name="copyright" content="Dueño ¢">
+    <meta name="language" content="EN">
+    <meta name="keywords" content="clothes, form, applying, job interview, recruitment">
+    <meta name="website designed for a recruitment, filling a spesialised Form">
+
+
+    <title>Recruitment Form</title>
+    
+</head>
+<body>
+    <h1>Job Interview Form</h1>
+    <p>please fill the following requests</p>
+    <form action="register.php" method="post">
+        <table>
+            <tr>
+                <td><label for="name; surname"><span>Name and Surname: </span></label></td>
+                <td><input type="text" id="name" name="name" placeholder="Write your name" required></td>
+                <td><input type="text" id="surname" name="surname" placeholder="Write your surname" required></td>
+            </tr>
+            <tr>
+                <td><label for="age"><span>Age:</span></label></td>
+                <td><input type="number" min="16"></td>
+            </tr>
+            <tr>
+                <td><label for="adress"><span>Adress</span></label></td>
+                <td><input type="text" name="adress" id="adress" placeholder="Street, Number, Floor, Door, Country"></td>
+            </tr>
+            <tr>
+                <td><label for="town"><span>Town:</span></label></td>
+                <td>
+                    <select name="town" id="town">
+                        <option value="1"><span>Town 1</span></option>
+                        <option value="2"><span>Town 2</span></option>
+                        <option value="3"><span>Town 3</span></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="tlf"><span>Thelephone:</span></label></td>
+                <td><input type="tel" name="tlf" id="tlf"></td>
+            </tr>
+            <tr>
+                <td><label for="worked_yet"><span>Have you<br>
+                                                Worked Yet?</span></label></td>
+                <td><input type="radio" name="question" id="yes">Yes</td>
+                <td><input type="radio" name="question" id="no">No</td>
+            </tr>
+            <tr>
+                <td><label for="last job"><span>Date of Last Job</span></label></td>
+                <td><input type="date" name="last job" id="last job"></td>
+            </tr>
+            <tr>
+                <td><label for="RRSS"><span>Social media Accounts</span></label></td>
+                <td><input type="checkbox">Twitter</td>
+                <td><input type="checkbox">Facebook</td>
+                <td><input type="checkbox">LinkedIn</td>
+            </tr>
+            <tr>
+                <td><label for="text"><span>Why you want this job?</span></label></td>
+                <td><textarea name="text" id="text" cols="30" rows="10" placeholder="introduce here a description"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="email">Correo Electronico</label></td>
+                <td><input type="email" name="email" id="email" placeholder="introduzca su email"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
