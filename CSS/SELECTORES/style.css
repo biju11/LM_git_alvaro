@@ -1,0 +1,72 @@
+a,p /*para seleccionar varias etiquetas usamos ,*/
+{
+    font-family: Trebuchet MS;
+    font-size: 18px;
+}
+
+div a /* con esto elegiremos todos los enlaces que esten dentro de div*/
+{
+    color: crimson;
+}
+
+#separador /* para llamar a un ID usamos la almohadilla */
+{
+    height: 200px;
+    width: 200px;
+}
+
+.nosub /* una clase, hay varias */
+{
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+#capa1 a.encima /*para seleccionar todos los enlaces que hay en la class encima dentro del div capa1 */
+{
+    font-weight: bold;
+}
+
+
+#capa1 a.encima:hover /* :hover sirve para el evento "poner el cursor encima", llamando al enlace a dentro de encima dentro de capa1 */
+{
+    font-size: xx-small;
+}
+
+p#parrafo1::first-line
+{
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 100px;
+    letter-spacing: 70px;
+}
+
+p#parrafo1::first-letter{
+    color: white;
+    background-color: blue;
+    border-radius: 7px;
+}
+
+#capa1 * 
+{
+    background-color: cyan;
+}
+
+
+div > a 
+{
+    font-style: oblique;
+}
+
+
+a[href^="http"]{
+    padding: 3px;
+}
+
+a[href$="es"] {
+font-weight: bold;
+text-decoration: none;
+}
+
+a[href*="forbes"]{
+    color: violet;
+}
