@@ -1,0 +1,28 @@
+a{
+    color: orangered;
+}
+p,a{
+    font-family: trebuchet ms;
+}
+
+#primero p{
+    color: rgb(24, 145, 145);
+}
+
+#primero em{
+    background-color: lightyellow;
+    color: blue;
+}
+
+em.especial{
+    background-color: black;
+    color: yellow;
+}
+
+#segundo span{
+    font-weight: bold;
+}
+
+p {
+    color: rgb(70, 67, 67);
+}
