@@ -1,0 +1,19 @@
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*flex-flow: row wrap-reverse;*/
+    justify-content: space-evenly;
+    align-items: center;
+    border: 7px solid black;
+    padding-left: 5px;
+    margin: 5px;
+}
+
+.elemento{
+    width: 25%;
+    background: linear-gradient(to top, rgb(38, 38, 116), rgb(66, 66, 66));
+    height: 40px;
+    border: 3px solid black;
+    color: white;
+}

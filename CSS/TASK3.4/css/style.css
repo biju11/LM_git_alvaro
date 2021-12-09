@@ -1,0 +1,24 @@
+h1 , h2 {
+    color: green;
+}
+
+#tconf{
+    background-color: black;
+    color: yellow;
+}
+
+div b{
+    border: 2px solid blue;
+}
+
+div .second:hover{
+    visibility: hidden;
+}
+
+a[href^="http"]{
+    text-decoration: none;
+}
+
+p.second::first-line{
+    font-size: larger;
+}
