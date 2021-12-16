@@ -1,0 +1,77 @@
+#main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#head{
+    display: flex;
+    width: 100%;
+    height: 18%;
+    background-color: rgb(170, 160, 160);
+}
+
+#jipa{
+    color: rgb(52, 52, 231);
+}
+
+#head p{
+    color: rgb(54, 53, 53);
+    padding: 2%;
+    align-items: center;
+    font-family: monospace;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#aficiones{
+    display: flex;
+    justify-content: right;
+    font-size: 20px;
+    font-family: monospace;
+    padding: 18px;
+}
+
+
+
+#tres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#DW,#montanha,#anipale{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3{
+ color: white;
+ font-family: sans-serif;
+}
+
+.definicion{
+    padding: 6%;
+    font-size: 12px;
+}
+
+#DW{
+    background-color: rgb(93, 154, 192);
+}
+#montanha{
+    background-color: rgb(160, 160, 87);
+}
+
+#anipale{
+    background-color: rgb(255, 111, 111)
+}
+
+.deltres{
+    border-radius: 15px 0;
+    border: 2px solid black;
+    width: 20%;
+    height: 40%;
+    box-shadow: black 0 0 3px;
+}
