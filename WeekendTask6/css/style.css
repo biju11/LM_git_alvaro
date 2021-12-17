@@ -50,10 +50,11 @@
 h3{
  color: white;
  font-family: sans-serif;
+ margin: 10px;
+ margin-top: 20px;
 }
 
 .definicion{
-    padding: 6%;
     font-size: 12px;
 }
 
@@ -68,10 +69,33 @@ h3{
     background-color: rgb(255, 111, 111)
 }
 
+.divfoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3%;
+}
+
+.foto{
+    align-items: center;
+    margin: 7%;
+}
+
 .deltres{
+    display: flex;
     border-radius: 15px 0;
     border: 2px solid black;
-    width: 20%;
-    height: 40%;
+    width: 28%;
+    height: 45%;
     box-shadow: black 0 0 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+#bot{
+    margin-top: 20px;
+    background-color: rgb(131, 127, 127);
+    box-shadow: rgb(70, 69, 69) 0 0 3px;
+    border-radius: 15px 0;
+    border: 2px solid black;
 }
