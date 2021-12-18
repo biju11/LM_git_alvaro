@@ -1,3 +1,10 @@
+div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #main{
     display: flex;
     flex-direction: column;
@@ -5,10 +12,15 @@
     height: 100%;
 }
 
+p{
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
 #head{
     display: flex;
     width: 100%;
-    height: 18%;
+    height: 10%;
     background-color: rgb(170, 160, 160);
 }
 
@@ -18,44 +30,64 @@
 
 #head p{
     color: rgb(54, 53, 53);
-    padding: 2%;
     align-items: center;
     font-family: monospace;
-    font-size: xx-large;
+    font-size: 28px;
     font-weight: bold;
+    padding-left: 2%;
 }
 
+/*FIN DE CABECERA*/
+/*FIN DE CABECERA*/
+/*FIN DE CABECERA*/
+
+
+
+#headtres{
+    width: 100%;
+    justify-content: center;
+    height: 5%;
+}
 #aficiones{
     display: flex;
+    color: rgb(100, 99, 99);
+    font-style: oblique;
     justify-content: right;
-    font-size: 20px;
-    font-family: monospace;
+    font-size: 36px;
+    font-family: sans-serif;
+    font-weight: bold;
     padding: 18px;
 }
-
-
-
 #tres{
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#cajatres{
+    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 #DW,#montanha,#anipale{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 31%;
+    height: 20%;
 }
 
 h3{
  color: white;
  font-family: sans-serif;
- margin: 10px;
- margin-top: 20px;
+ font-size: x-large;
 }
 
 .definicion{
-    font-size: 12px;
+    font-size: larger;
+    font-family: sans-serif;
+    margin: 1%;
 }
 
 #DW{
@@ -65,6 +97,11 @@ h3{
     background-color: rgb(160, 160, 87);
 }
 
+#iconos{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
 #anipale{
     background-color: rgb(255, 111, 111)
 }
@@ -72,30 +109,99 @@ h3{
 .divfoto{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 3%;
+    justify-content: space-around;
+    margin-bottom: 4%;
 }
 
 .foto{
     align-items: center;
-    margin: 7%;
+
 }
 
 .deltres{
     display: flex;
-    border-radius: 15px 0;
+    border-radius: 20px 0;
     border: 2px solid black;
-    width: 28%;
-    height: 45%;
+    width: 30%;
+    height: 50%;
     box-shadow: black 0 0 3px;
     align-items: center;
     justify-content: center;
 }
 
+/*FINAL DE CAJA CENTRAL*/
+/*FINAL DE CAJA CENTRAL*/
+/*FINAL DE CAJA CENTRAL*/
+
+
+
+
 #bot{
-    margin-top: 20px;
-    background-color: rgb(131, 127, 127);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    background-color: rgb(194, 189, 189);
     box-shadow: rgb(70, 69, 69) 0 0 3px;
     border-radius: 15px 0;
     border: 2px solid black;
+}
+
+#headbot{
+    margin: 0px;
+    margin-top: 1%;
+}
+.texto{
+    justify-content: flex-start;
+    left: 1%;
+}
+.texto p{
+    font-weight: 400;
+    font-size: 90%;
+}
+
+
+#subbot{
+    width: 96%;
+    height: 92%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 15px 0;
+    box-shadow: rgb(70, 69, 69) 0 0 9px;
+    margin: 1%;
+    border: 0.25px solid black;
+    font-size: x-large;
+}
+#cajavideo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 3%;
+}
+
+iframe{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+a{
+    text-decoration: none;
+    color: rgb(187, 4, 187);
+}
+
+#culo{
+    margin-top: 1%;
+    width: 100%;
+    height: 5%;
+    background-color: rgb(53, 51, 51);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
 }
