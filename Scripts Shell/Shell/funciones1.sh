@@ -3,14 +3,13 @@ crea(){
     for i in {0..49}
     do
         num[$i]=$RANDOM
-        echo "${num[$i]}"
     done
     let tam=${#num[@]}
+    echo $tam
 
 }
-
 muestra(){
-    if [ $tam -ne 0 ]
+    if [ "$tam" -ne "0" ]
         then   
             for j in {0..$tam}
             do
@@ -20,7 +19,6 @@ muestra(){
             echo "no hay lista para mostrar"
     fi
 }
-
 rotaiz(){
     if [ $tam -ne 0 ]
         then
@@ -37,8 +35,6 @@ rotaiz(){
     fi
 
 }
-
-
 rotader(){
     if [ $tam -ne 0 ]
         then
@@ -54,9 +50,3 @@ rotader(){
             echo "introduzca una lista antes"
     fi
 }
-
-    
-
-
-
-
