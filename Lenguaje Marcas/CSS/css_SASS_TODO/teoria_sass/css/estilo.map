@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "estilos.css",
+	"file": "estilo.css",
 	"sources": [
-		"../sass/estilos.scss"
+		"../sass/estilo.scss"
 	],
 	"sourcesContent": [
 		""
