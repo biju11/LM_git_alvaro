@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.scss"
+	],
+	"sourcesContent": [
+		"/*\naparecera en CSS\n*/\n\n// no aparecera en css\n\n$letra-prim: #9e540f;\n$fondo: #706b66;\n"
+	],
+	"names": [],
+	"mappings": "AAAA;;EAEE"
+}
