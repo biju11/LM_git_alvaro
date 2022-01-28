@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"$titu-color:#df4130;\n$fondo:#a29492;\n$tipo-l:monospace;\n$titu-size: 80px;\n$forma-menu: inline-block;\n$tam-let-menu: 32px;\n$letra-menu: verdana;\nbody{\n    background-color: $fondo;\n    font-family:$tipo-l;\n}\nh1{\n    color:$titu-color;\n    font-family:$tipo-l;\n    font-size: $titu-size;\n}\n@mixin menu {\n    display: flex;\n    list-style:none;\n    color: white;\n    justify-content: space-between;\n    text-decoration: none;\n    font-size: $tam-let-menu;\n    margin-right: 10px;\n    font-family: $letra-menu;\n}\n@mixin enl{\n    color: black;\n    text-decoration: none;\n    list-style: none;\n    margin-left: 20px;\n}\nnav ul{\n   @include menu;\n}\n\nnav ul li a{\n    @include enl;\n}"
+	],
+	"names": [],
+	"mappings": ";AAOA,AAAA,IAAI,CAAA;EACA,gBAAgB,EAPb,OAAO;EAQV,WAAW,EAPP,SAAS;CAQhB;;;AACD,AAAA,EAAE,CAAA;EACE,KAAK,EAZG,OAAO;EAaf,WAAW,EAXP,SAAS;EAYb,SAAS,EAXD,IAAI;CAYf;;;AAiBD,AAAA,GAAG,CAAC,EAAE,CAAA;EAfF,OAAO,EAAE,IAAI;EACb,UAAU,EAAC,IAAI;EACf,KAAK,EAAE,KAAK;EACZ,eAAe,EAAE,aAAa;EAC9B,eAAe,EAAE,IAAI;EACrB,SAAS,EAjBE,IAAI;EAkBf,YAAY,EAAE,IAAI;EAClB,WAAW,EAlBF,OAAO;CA4BnB;;;AAED,AAAA,GAAG,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAA;EATP,KAAK,EAAE,KAAK;EACZ,eAAe,EAAE,IAAI;EACrB,UAAU,EAAE,IAAI;EAChB,WAAW,EAAE,IAAI;CAQpB"
+}

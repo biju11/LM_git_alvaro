@@ -1,0 +1,39 @@
+$titu-color:#df4130;
+$fondo:#a29492;
+$tipo-l:monospace;
+$titu-size: 80px;
+$forma-menu: inline-block;
+$tam-let-menu: 32px;
+$letra-menu: verdana;
+body{
+    background-color: $fondo;
+    font-family:$tipo-l;
+}
+h1{
+    color:$titu-color;
+    font-family:$tipo-l;
+    font-size: $titu-size;
+}
+@mixin menu {
+    display: flex;
+    list-style:none;
+    color: white;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: $tam-let-menu;
+    margin-right: 10px;
+    font-family: $letra-menu;
+}
+@mixin enl{
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 20px;
+}
+nav ul{
+   @include menu;
+}
+
+nav ul li a{
+    @include enl;
+}
