@@ -6,10 +6,10 @@ class __init__(object):
         self.estado="cerrada"
     def abrir(self):
         self.estado="abierta"
-    def cerrar(self)
+    def cerrar(self):
         self.estado="cerrada"
     def mostrar(self):
-        print("ancho"+str(ancho))
-        print("alto"+str(alto))
-        print("estado"+str(estado))
+        print("ancho"+str(self.ancho))
+        print("alto"+str(self.alto))
+        print("estado"+str(self.estado))
     
