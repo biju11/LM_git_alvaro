@@ -24,7 +24,42 @@ class ventana:
             self.estado="cerrada"
         else:
             print("el estado se conservara en: "+str(self.estado))
+
+
+#sobrecarga de operadores
+#sumar ventanas
+#comparar ventanas
+
+
+    def __add__(self,ventana2):
+        nancho= self.ancho+ventana2.ancho
+        nalto= self.alto+ventana2.alto
+        c=self.color
+        return ventana(nancho,nalto,c)
+    def __gt__(self,ventana2):
+        if (self.ancho>ventana2.ancho)and(self.alto>ventana2.alto):
+            return True
+        else:
+            return False
+            
+        
 a=ventana(1000,2000,"blanca")
+b=ventana(200,44,"rosa")
 a.mostrar()
-a.cambio()
-a.mostrar()
+b.mostrar()
+c=a+b
+c.mostrar()
+if c>a:
+    print("C es mayor que A")
+else:
+    print("A es mayor que C")
+if b>c:
+    print("B es mayor que C")
+else:
+    print("C es mayor que B")
+if a>b:
+    print("A es mayor que B")
+else:
+    print("B es mayor que A")
+
+
