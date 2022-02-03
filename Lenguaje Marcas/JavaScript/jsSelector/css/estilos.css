@@ -1,0 +1,8 @@
+.bordeycolor{
+    border: 3px solid greenyellow;
+    border-radius: 100px;
+    color: greenyellow;
+    background-color: black;
+    font-size: 64px;
+    font-weight: bolder;
+}
