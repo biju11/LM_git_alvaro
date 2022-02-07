@@ -1,0 +1,5 @@
+sin(x)
+sin(2*x)
+sin(4*x)
+sin(x/2)
+sin(x/4)
