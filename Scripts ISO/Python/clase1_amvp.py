@@ -1,19 +1,23 @@
+import random
+
+
 class coche:
     def __init__(self,ancho,largo,color,estado,marca,modelo):
-        self.ancho=ancho
-        self.largo=largo
+        self.ancho=int(ancho)
+        self.largo=int(largo)
         self.color=color
         self.estado=estado
         self.marca=marca
         self.modelo=modelo
 
     def diseña(self):
-        ancho=(input("Introduzca un ancho en centimetros: "))
-        largo=(input("Introduzca un largo en centimetros: "))
-        color=(input("introduzca un color: "))
-        estado="parado"
-        marca=(input("Introduzca la Marca del coche: "))
-        modelo=(input("Introduzca el Modelo del coche: "))
+        self.ancho=int(input("Introduzca un ancho en centimetros: "))
+        self.largo=int(input("Introduzca un largo en centimetros: "))
+        self.color=(input("introduzca un color: "))
+        self.estado="parado"
+        self.marca=(input("Introduzca la Marca del coche: "))
+        self.modelo=(input("Introduzca el Modelo del coche: "))
+        self.serial=int(random.randint(1,9999999999999999))
 
     def arrancar(self):
         if (self.estado) == "parado":
@@ -35,10 +39,13 @@ class coche:
         print("[+]  Color: ",self.color)
         print("[+]  La marca del vehiculo es: ",self.marca)
         print("[+]  El modelo del vehiculo es: ",self.modelo)
-#a = coche(2000,3500,"Negro","parado","Land Rover","Evoque")
+        print("[+]  Numero de Bastidor: ",self.serial)
+
+
+a = coche(1,1,"Sin Pintura","parado","Default","Por Defecto")
 #a.arrancar()
 #a.diseña()
 #a.specs()
-b=coche(ancho,largo,color,estado,marca,modelo)
+b=a
 b.diseña()
 b.specs()
