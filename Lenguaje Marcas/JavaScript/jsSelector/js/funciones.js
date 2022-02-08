@@ -4,16 +4,33 @@ function mostrar_hola(){
     /*
     var usu = prompt("Como quiere que le llame?");
     document.getElementById("texto").innerHTML = "Hola, " + usu + "<br>";
-    var radios = document.getElementsByName("valores")
+    var radios = document.getElementsByName("valores");
     for (let i = 0; i < radios.length; i++){
         alert(radios[i].value);}
-        alert(document.getElementsByTagName("p")[0]);*/
-        document.getElementsByClassName("clase")[1].onclick = mostrar("Pulsado");
+        alert(document.getElementsByTagName("p")[0]);
+        document.getElementsByClassName("clase")[1].onclick = mostrar("Pulsado");*/
+
+        //document.querySelector("#container p:first-child").onclick = alerta
+
+        var coleccion = document.querySelectorAll("#container p");
+        document.getElementById("container").querySelectorAll("p");
+
+        for (let i = 0; i < coleccion.length; i++) {
+            coleccion[i].innerHTML = "aqui va el parrafo " + (i+1);
+        }
+
 }
+
 function mostrar(texto){
-    alert(texto);
-    
+    alert(texto);    
 }
+
+function alerta(){
+    alert("Alerta")
+}
+
+
+
 function mostrarMensaje() {
     document.getElementById("texto").innerHTML = "Hola";
     document.getElementById("texto").className = "bordeycolor";
