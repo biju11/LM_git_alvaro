@@ -1,3 +1,0 @@
-set terminal gif
-set output 'paco.gif'
-plot x**2*sin(x)
