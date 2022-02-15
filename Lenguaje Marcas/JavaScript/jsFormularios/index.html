@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/funciones.js"></script>
-
-
-    <title>FORMULARIOS JS</title>
+    <title>Formularios</title>
+    <script type="text/javascript" src="js/funciones.js"></script>
 </head>
 <body>
-    <div id="padre">
-        <h1>FORMULARIO: </h1>
-    <form action="" method="post" name="formulariopruebas">
-        <div>
-            <label for="nombre" id="nombre" >Nombre: </label>
-            <input type="text" name="nombre" id="nombre" placeholder="Introduzca nombre" onblur="validar()">
-            <span id="spanombre" style="color: darkred"></span>
-        </div>
-        <div>
-            <label for="passwd" id="passwd" >Contraseña: </label>
-            <input type="password" name="passwd" id="passwd" placeholder="Introduzca Contraseña">
-        </div>
-        
-       
-
-    </form>
+    <h1>FORMULARIO</h1>
+    <div style="border: 2px solid black; width: 50%; float: left;">
+        <form action="form.txt" method="get" name="formu" onsubmit="return validarFormulario">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" autofocus onblur="validar(this)">
+            <br/>
+            <label for="zipcode">Código Postal</label>
+            <input type="number" name="zipcode" id="zipcode" size="5">
+            <br>
+            <label for="edad">Edad:</label>
+            <input type="range" name="edad" id="edad" min="1" max="100" onchange="mostrarEdad(this)">
+            <span id="edad_val"></span>
+            <br>
+            <label for="tlf">Teléfono</label>
+            <input type="tel" name="tlf" id="tlf">
+            <br>
+            <input type="submit" value="Confirmar Formulario">
+        </form>
     </div>
-    
+    <div id="f_error" style="width: 50%; float: left; visibility: ;">
+        <h3>Errores:</h3>
+        <span id="sperror" style="color: red;"></span>
+    </div>
 </body>
 </html>
