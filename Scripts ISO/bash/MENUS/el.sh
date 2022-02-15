@@ -13,14 +13,30 @@
 
 read -p "Escriba la ruta exacta del fichero:    " fichero
 sleep 1
-echo -e "\r"
-cat $fichero>aux.txt
-exec 9<aux.txt
-read -u 9 linea
-while [ '$linea' ]
+cat $fichero>/tmp/aux.txt
+#exec 9</tmp/aux.txt
+while [ "$1" ]
     do
-        echo "$linea"
-        read -u 9 linea
+        let sel_linea=$1-1
+        echo $sel_linea
     done
-
-exec 9<&-
+#exec 9<&-
+#let tamfich=$(wc /tmp/aux.txt -l | cut -f1 -d' ')
+#echo $tam
+#let i=0
+#let counter=0
+#params=[]
+#while [ $1 ]
+#    do
+#        let params[$i]=$1-1
+#        echo "params[$i]"
+#        let i=$i+1
+#        while [ $counter -ne $tamfich ]
+#        do
+#            let t=${params[$i]}
+#        done
+#        if [  ]
+#        echo ""
+#        shift
+#   done
+#echo "he recibido $i parametros"
