@@ -1,103 +1,148 @@
+/*todos los enlaces y parrafos*/
 a,p {
-    font-size: 18px;
+    font-size: 20px;
 }
 
+/*llamando a todos los enlaces dentro de todos los div*/
 div a {
     color: crimson;
+    font-weight: bolder;
 }
 
-div#capa1 {
-    background: blue;
+/*llamando al ID "capa1"*/
+#capa1 {
+    background: rgb(0, 255, 34);
 }
 
-/* comentario */
+/* llamando a TODAS LAS CLASS letraGrande */
 .letraGrande {
     font-size: xx-large;
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* llamando a TODAS LAS CLASS nosubrayado */
 .nosubrayado {
     text-decoration: none;
 }
 
-div#capa1 a.encima {
-    font-weight: bold;
-}
-
+/*llamando a todas las CLASE 'encima'*/
 .encima {
     font-style: italic;
 }
 
-div#capa1 a.encima:hover {
-    font-size: xx-large;
-}
 
-p#miparrafo::first-line {
+
+
+
+/* llamando a todos los enlaces con CLASE "encima" del ID "capa1"*/
+#capa1 a.encima {
     font-weight: bold;
 }
+/* ':hover' es un evento(posar raton), */
+#capa1 a.encima:hover {
+    font-size: xx-large;
+    background-color: black;
+}
 
-p#miparrafo::first-letter {
-    font-size: 60px;
-    color: blue;
+
+
+
+/* llamando a la primera linea del parrafo con ID 'miparrafo'  */
+#miparrafo::first-line {
+    font-weight: bolder;
+    color: royalblue;
+}
+/*llamando a la primera letra del parrafo con ID 'miparrafo'*/
+#miparrafo::first-letter {
+    font-size: 90px;
+    color: red;
     font-family: monospace;
 }
 
-div#capa1 * {
-    background: yellow;
+/*????????*/
+#capa1 * {
+    background: rgb(255, 255, 10);
 }
 
+
+/*llama a todos los a hijos de div*/
 div > a {
     border: 3px solid red;
 }
 
+
+
+
+/*todos los enlaces que comienzan por 'http'*/
 a[href^="http"] {
     padding: 20px;
 }
-
+/*todos los enlaces que acaban en 'es'*/
 a[href$="es"] {
     text-transform: uppercase;
 }
-
+/*todos los enlaces que contienen dentro de su href 'triana' */
 a[href*="triana"] {
-    background: violet;
+    background: rgb(75, 50, 75);
 }
 
+
+
+/*llama al parrafo p que es consecutivo a un div*/
 div + p {
-    font-size: 80px;
+    font-size: 90px;
 }
 
+
+/*llama al primer li dentro del ul con ID 'lista'*/
 ul#lista li:first-child {
     background: slateblue;
 }
-
+/*llama al ultimo li dentro del ul con ID 'lista'*/
 ul#lista li:last-child {
     background: springgreen;
 }
 
-a#ultimo:hover {
+
+/*esto sucederá cuando posemos el raton sobre el enlace con ID 'uultimo'*/
+a#uultimo:hover {
     font-size: xx-large;
+    background-color: rgb(187, 255, 0);
+    color: black;
+    text-decoration: none;
 }
-
-a#ultimo:link {
-    font-size: medium;
+/*apariencia cuando el link con ID 'uultimo' todavia no ha sido clickado*/
+a#uultimo:link {
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(255, 0, 43);
 }
-
-a#ultimo:visited {
+/*sucederá cuando hayamos clickado el link con ID 'uultimo' */
+a#uultimo:visited {
     font-size: 2px;
+    color: green;
+    background-color: black;
 }
 
+
+
+
+/*sucederá cuando el cursor esté sobre algun inputbox*/
 input:focus {
-    border: 2px solid blue;
+    border: 5px solid blue;
 }
 
 input:enabled {
-
+/*para inputbox disponibles*/
+background-color: lightgreen;
 }
 
 input:disabled {
-
+/*para inputbox inactivos*/
+background-color: rgba(92, 0, 0, 0.774);
 }
 
-input:checked {
-    
+input[type="checkbox"]:checked {
+/*para botones checkeados*/
+border: 3px solid yellow;
 }
