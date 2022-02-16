@@ -1,1 +1,1 @@
-Padreando compañerxs de clase desde 1997 ;)
+Padreando desde 1997 ;)
