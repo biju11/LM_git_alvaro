@@ -144,5 +144,5 @@ background-color: rgba(92, 0, 0, 0.774);
 
 input[type="checkbox"]:checked {
 /*para botones checkeados*/
-border: 3px solid yellow;
+border: 9px solid rgb(255, 0, 111);
 }
