@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(190, 248, 190);
+}
+
+h2,span{
+    font-style: italic;
+}
+
+#data{
+    background-color: rgb(107, 103, 103);
+}
+
+#muchospan span{
+    font-weight: bold;
+}
+
+.segundo:active{
+    background-color: rgb(89, 7, 7);
+}
+
+div span::first-letter{
+    font-size: x-large;
+    background-color: brown;
+}
+
+li a{
+    text-decoration: none;
+}
+
+a[href$="es"]{
+    color: red;
+}
+
+a[href$="com"]{
+    color: royalblue;
+}
+
+#lista:hover{
+    font-size: large;
+} 
+#linkk:hover{
+    font-size: larger;
+}
+
+ul li:first-child{
+    background-color: gray;
+}
