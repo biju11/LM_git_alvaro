@@ -1,12 +1,13 @@
 #!/bin/bash
-echo $QUERY_STRING|cut -f2 -d=
-func=$(echo $QUERY_STRING|cut -f2 -d=)
-echo "set terminal gif" >> /tmp/outp.gplot
-echo "set output '/var/www/html/grafica.gif'">>/tmp/outp.gplot
-echo "plot $funcion" >> outp.gplot
-cat /tmp/outp.gplot|gnuplot
-echo "Content-type: text/html"
+#chmod /var/www/html
+#chmod /var/www/cgi-bin
+f=$(echo $QUERY_STRING|cut -f2 -d=)
+echo "set terminal gif">hola.txt
+echo "set output 'grafica.gif'">>hola.txt
+echo "plot $f">>hola.txt
+cat hola.txt|gnuplot
+cp grafica.gif /var/www/html
+echo "content-type: text/html"
 echo ""
-echo "<h1>Bienvenido al Generador de gráficas de funciones</h1>"
-echo "<p>Introduzca en la URL un parámetro</p>"
-echo "<meta http-equiv='refresh' content=0;url=http://localhost/grafica.gif/>"
+echo $f
+echo "<center><img src=http://localhost/grafica.gif></center>"
