@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/func.js" type="text/javascript"></script>
+    <title>Ejercicio 3 Javascript</title>
+</head>
+<body>
+    <h1>Ejercicio 3 Javascript</h1>
+    <p>
+        Solicita el nombre y la edad en años del cliente y muestra <br>
+        el resultado de los dia que ha vivido suponiendo que todos los años <br>
+        tienen 365 días
+    </p>
+    <div style="height: 5%;">
+        <br>
+    </div>
+
+    
+    <div style="border: 3px solid darkgray;">
+        <table>
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input type="text" id="nombre" autofocus placeholder="Introduzca su nombre ..."></td>
+            </tr>
+            <tr>
+                <td><label for="edad">Edad:</label></td>
+                <td><input type="date" max="2022-02-22" value="2022-02-22" id="edad" autofocus placeholder="Introduzca su edad ..."></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Calcular..." onclick=calculaEdad()></td>
+            </tr>
+        </table>
+        <span id="hoy"></span>
+        <span id="resultado"></span>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td><label for="n1">Introduzca numero 1</label></td>
+                <td><input type="number" id="n1"></td>
+            </tr>
+            <tr>
+                <td><label for="n2">Introduzca numero 2</label></td>
+                <td><input type="number" id="n2"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Comparar..." onclick="comparaNum()"></td>
+            </tr>
+            <tr>
+                <td><span id="resul2"></span></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

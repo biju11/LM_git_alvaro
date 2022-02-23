@@ -1,0 +1,15 @@
+fs.com página de fibra optica
+transceptor convierte de F.O hacia electronica
+
+
+toda la provincia de sevilla, dar 5G a cada localidad
+
+?   40 pelos por pueblo
+?   ojo a la potencia del conversor de medios
+?   dwdm (multiplexador de frecuencia)
+?
+?
+
+
+
+
