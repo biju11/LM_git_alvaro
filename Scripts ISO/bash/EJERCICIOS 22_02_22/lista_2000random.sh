@@ -1,4 +1,6 @@
 #!/bin/bash
+#almacenar 2000 numeros RANDOM
+
 let c = 0
 let listnum=[]
 for i in {0..1999}
