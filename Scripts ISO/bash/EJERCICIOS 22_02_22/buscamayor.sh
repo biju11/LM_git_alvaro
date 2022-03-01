@@ -1,5 +1,5 @@
 #!/bin/bash
-let c = 0
+let c=0
 let listnum=[]
 for i in {0..1999}
     do
@@ -15,20 +15,29 @@ echo "esta lista contiene ${#listnum[@]} elementos"
 echo "ahora buscaré quien es el mayor de todos los numeros de esta lista"
 let min=99999
 let max=-1
-let selec=${listnum[$c]}
-if [ $selec -gt $max ]
-    then
-        echo "$selec es mayor que $max"
-        let max=$selec
-        echo $max "es el maximo"
-            if [ $selec -lt $min ]
+
+
+while [ $c -ne 2000 ]
+    do
+        let selec=${listnum[$c]}
+            if [ $selec -gt $max ]
                 then
-                    echo "$selec es menor que $min"
-                    let min=$selec
-                    echo $min "es el minimo"
-
+                    echo "$selec es mayor que $max"
+                    let max=$selec
             fi
-    let c=$c+1
-    let selec=${listnum[$c]} 
+            
+        echo "$c"
+        let c=$c+1
 
-fi
+    done
+echo $max "es el mayor"
+
+
+#
+#if [ $selec -lt $min ]
+#                then
+#                    echo "$selec es menor que $min"
+#                    let min=$selec
+#                    echo $min "es el minimo"
+#
+#            fi
