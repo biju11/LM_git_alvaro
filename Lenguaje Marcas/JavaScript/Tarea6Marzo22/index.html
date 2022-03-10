@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/func_tarea.js" type="text/JavaScript"></script>
+    <title>Tarea 6 Marzo</title>
+    <style>
+        table{border: 5px solid lightgray;}
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <h3>estilos CSS en mantenimiento...</h3>
+    <div>
+        <table>
+            <tr>
+                <td><label for="n1">Introduzca Numero 1</label></td>
+                <td><input type="text" placeholder="nº 1 aqui..." id="n1" autofocus></td>
+            </tr>
+            <tr>
+                <td><label for="n2">Introduzca Numero 2</label></td>
+                <td><input type="text" placeholder="nº 2 aqui..." id="n2"></td>
+            </tr>
+            <tr style="display: inline-block; position: relative;">
+                <td style="margin: 25%;"><button value="+" id="sum" class="bot" onclick="calc()">+</button></td>
+                <td style="margin: 25%;"><button value="-" id="dif" class="bot" onclick="calc()">-</button></td>
+                <td style="margin: 25%;"><button value="·" id="prod" class="bot" onclick="calc()">·</button></td>
+                <td style="margin: 25%;"><button value="/" id="frac" class="bot" onclick="calc()">/</button></td>
+            </tr>
+            <tr>
+                <td><label for="resul">Resultado:</label></td>
+                <td><span id="resultado" style="border: 3px solid lightgreen; background-color: lightgray;"></span></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
