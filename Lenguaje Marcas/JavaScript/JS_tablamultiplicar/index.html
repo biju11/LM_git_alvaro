@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Multiplicar</title>
+    <script src="js/multipl.js"></script>
+</head>
+<body>
+    <h1 style="font-family: monospace; font-size: 48px;">
+        Calculadora de Tablas de Multiplicar
+    </h1>
+    <div>
+        <table>
+            <tr>
+                <td><label for="num">Introduzca un numero</label></td>
+                <td><input type="text" id="n1" placeholder="..."></td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="multiplica(document.getElementById('n1').value)">Calcula la tabla</button>
+                </td>
+            </tr>
+        </table>
+        <div id="result">
+        </div>
+    </div>
+</body>
+</html>
