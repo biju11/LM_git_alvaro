@@ -6,16 +6,18 @@
 <h2>Evento Onclick</h2>
 
 <h3 id="demo" onclick="myFunction()">Color de Vlan.</h3>
+<!-- 
 
 <button id="rojo" onclick="miFunc('red')">Rojo</button>
 <button id="verde" onclick="miFunc('green')">Verde</button>
 <button id="azul" onclick="miFunc('blue')">Azul</button>
+ -->
+
 <br>
 <br>
 <br>
 
-<input type='color' name='color' id="color" onsubmit="myFunction(document.getElementById('color').value)">
-<input type='color' name='color2' value='#3355cc'>
+<input type='color' name='color' id="color" onchange="myFunction()">
 
 
 
@@ -26,16 +28,31 @@
 <button id="sw1trunk" onclick="miFunc('red')">Switch1 Trunk</button>
 <button id="sw1access" onclick="miFunc('red')">Switch1 Access</button>
 <br>
-<button id="b1" onclick="activa('b1')">1</button>
-<button id="b2" onclick="activa('b2')">2</button>
-<button id="b3" onclick="activa('b3')">3</button>
-<button id="b4" onclick="activa('b4')">4</button>
-<button id="b5" onclick="activa('b5')">5</button>
-<button id="b6" onclick="activa('b6')">6</button>
-<button id="b7" onclick="activa('b7')">7</button>
-<button id="b8" onclick="activa('b8')">8</button>
-<button id="b9" onclick="activa('b9')">9</button>
-<button id="b10" onclick="activa('b10')">10</button>
+<table>
+    <tr>
+        <td><button id="b1" onclick="activa('b1')">1</button></td>
+        <td><button id="b2" onclick="activa('b2')">2</button></td>
+        <td><button id="b3" onclick="activa('b3')">3</button></td>
+        <td><button id="b4" onclick="activa('b4')">4</button></td>
+        <td><button id="b5" onclick="activa('b5')">5</button></td>
+    </tr>
+    <tr>
+        <td><button id="b6" onclick="activa('b6')">6</button></td>
+        <td><button id="b7" onclick="activa('b7')">7</button></td>
+        <td><button id="b8" onclick="activa('b8')">8</button></td>
+        <td><button id="b9" onclick="activa('b9')">9</button></td>
+        <td><button id="b10" onclick="activa('b10')">10</button></td>
+    </tr>
+</table>
+
+
+
+
+
+
+
+
+
 <button id="b11" onclick="activa('b11')">11</button>
 <button id="b12" onclick="activa('b12')">12</button>
 <button id="b13" onclick="activa('b13')">13</button>

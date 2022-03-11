@@ -1,5 +1,8 @@
-function myFunction() {
-    document.getElementById("demo").style.background.color = "red";
+var color1 = "";
+
+function myFunction() {    
+    document.getElementById("demo").style.color = document.getElementById('color').value;
+    color1 = document.getElementById('color').value;
   }
 
 
@@ -14,7 +17,9 @@ function myFunction() {
    }
    
     function activa(b) {
-    document.getElementById(b).style.backgroundColor = document.getElementById("demo").style.color;
+    document.getElementById("demo").style.color = document.getElementById('color').value;
+    color1 = document.getElementById('color').value;
+    document.getElementById(b).style.backgroundColor = color1 /*document.getElementById("demo").style.color*/;
    }
    
    function graba(b) {
