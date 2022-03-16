@@ -8,21 +8,28 @@
     <title>TASK 10 JS</title>
 </head>
 <body>
-    <div style="border: 3px solid darkslategrey; background-color: lightgreen; padding: 2%;">
+    <div style="border: 3px solid darkslategrey; background-color: lightgreen; padding: 2%; font-family: monospace;">
+        <h1>Formulario</h1>
         <table>
             <tr>
-                <td><label for="caja">Introduzca un número</label></td>
-                <td><input type="text" id="caja" placeholder="aqui . . ."></td>
+                <td><label for="email">Introduzca un E-mail:</label></td>
+                <td><input type="email" placeholder="respete el formato de email"></td>
             </tr>
             <tr>
-                <td><button onclick="add()">Introduzca Siguiente</button></td>
-                <td><button onclick="submitea('fin')">Finalice la funcion</button></td>
+                <td><label for="website">Introduzca una URL válida: </label></td>
+                <td><input type="url" name="website" id="web"></td>
             </tr>
             <tr>
-                <td><span><br> Resultado: <br></span></td>
+                <td><label for="edad" >Introduzca su Edad: </label></td>
+                <td><input type="number"></td>
             </tr>
             <tr>
-                <td><span id="resultado"></span></td>
+                <td><label for="password">Introduzca su contraseña: </label></td>
+                <td><input type="password" name="passwd" id="passwd"></td>
+            </tr>
+            <tr>
+                <td><label for="2fa">Introduzca su contraseña: </label></td>
+                <td><input type="password" name="2fa" id="2fa"></td>
             </tr>
         </table>
     </div>
