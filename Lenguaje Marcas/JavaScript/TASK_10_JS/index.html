@@ -4,34 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/task11.js"></script>
+    <script src="js/task12.js"></script>
     <title>TASK 10 JS</title>
 </head>
 <body>
     <div style="border: 3px solid darkslategrey; background-color: lightgreen; padding: 2%; font-family: monospace;">
         <h1>Formulario</h1>
-        <table>
-            <tr>
-                <td><label for="email">Introduzca un E-mail:</label></td>
-                <td><input type="email" placeholder="respete el formato de email"></td>
-            </tr>
-            <tr>
-                <td><label for="website">Introduzca una URL válida: </label></td>
-                <td><input type="url" name="website" id="web"></td>
-            </tr>
-            <tr>
-                <td><label for="edad" >Introduzca su Edad: </label></td>
-                <td><input type="number"></td>
-            </tr>
-            <tr>
-                <td><label for="password">Introduzca su contraseña: </label></td>
-                <td><input type="password" name="passwd" id="passwd" placeholder="introduzca aquí su password"></td>
-            </tr>
-            <tr>
-                <td><label for="2fa">Verifique su contraseña: </label></td>
-                <td><input type="password" name="2fa" id="2fa" placeholder="introduzca aquí su password"></td>
-            </tr>
-        </table>
+        <form action="" onsubmit="return validar()">
+            <table>
+                <tr>
+                    <td><label for="email">Introduzca un E-mail:</label></td>
+                    <td><input type="text" id="email" placeholder="respete el formato de email"></td>
+                </tr>
+                <tr>
+                    <td><label for="website">Introduzca una URL válida: </label></td>
+                    <td><input type="url" name="website" id="web" placeholder=""></td>
+                </tr>
+                <tr>
+                    <td><label for="edad" >Introduzca su Edad: </label></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Introduzca su contraseña: </label></td>
+                    <td><input type="password" name="passwd" id="passwd" placeholder="introduzca aquí su password"></td>
+                </tr>
+                <tr>
+                    <td><label for="2fa">Verifique su contraseña: </label></td>
+                    <td><input type="password" name="2fa" id="2fa" placeholder="introduzca aquí su password"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Validar Datos</button></td>
+                </tr>
+            </table>
+        </form>
+        <ul id="res">
+            
+        </ul>
     </div>
 </body>
 </html>
