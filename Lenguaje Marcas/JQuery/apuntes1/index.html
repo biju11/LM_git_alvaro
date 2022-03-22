@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jquery-3.6.0.js"></script>
+    <title>JQuery Selectores</title>
+    <script>
+
+        $(document).ready(function () {
+            /*seleccionar por id*/
+            $("#seg").css("border","2px solid black");
+
+            /*seleccion por name*/
+            $("div").css("background","lightgreen");
+
+            /*seleccion por classname*/
+            $(".clase").css("font-weight","bolder");
+            $(".clase").css("font-family","arial");
+            /*Seleccionar todos los elementos
+            $("*").css("color","gray");*/
+
+            /*seleccionar varios elementos*/
+            $(".class,h1").css("font-style","italic");
+
+            /*Seleccionar todos los elementos dentro de div b*/
+            $("#b *").css("background","lightyellow");
+
+            /*selecciona hijos directos del div b*/
+            $("#b > *").css("border","3px solid red");
+
+            /*Seleccionar todos los hermanos de ul*/
+            $("li.dos ~").css("font-size","x-large");
+
+            /*seleccionar 1 fila de la tabla*/
+            $("tr:first").css("height","50px");
+
+            /*seleccionar ultima celda de table*/
+            $("td:last").css("background","blue");
+
+            //Seleccionar filas par
+            $("tr:even").css("background","darkgray");
+
+            /*En el Git del profesor hay muchisimas mas opciones de seleccion
+            mayor que
+            menor que
+            etc
+            */
+
+            /*Seleccionar primer enlace del parrafo p*/
+            $("p a:first-child").css("color","red");
+
+            /*Seleccionar ultimo enlace dentro de p*/
+            $("p a:last-child").css("color","pink");
+
+            /*Seleccionar un enlace hijo en concreto*/
+            $("p a:nth-child(3)").css("text-decoration","none");
+            $("p a:nth-child(3)").append("<span>Equivalente a InnerHTML</span>");
+
+            /*Seleccionar parrafos que tengan contenido*/
+            $("p:contains(pere)").css("font-family","monospace");
+            $("p:contains(pere)").css("font-style","italic");
+
+            /*Select parrafo vacio*/
+            $("p:empty").css("color",)
+
+            /*Seleccionar parrafo padre*/
+            $("p:parent").css("font-size","24px")
+
+            /*Selecciona todos los parrafos visibles*/
+            $("p:visible").css("background","darkred")
+
+            /*acciona boton mostrar*/
+            $("#muestra").click(function borra() {
+                $("p:hidden").css("background","royalblue").show()
+            })
+
+
+
+
+
+
+
+        });
+
+
+    </script>
+    <style>
+        h1{font-family: monospace
+        }
+        p{width: 20%;
+          padding: 3%;
+        }
+        table{
+            border-collapse: collapse;
+            width: 300px;
+            border: 2px solid black;
+        }
+        td{
+            border: 2 px solid black;
+            text-align: center;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+          
+
+    </style>
+</head>
+<body>
+    <h1>JQuery Selectores</h1>
+    <p class="clase">Parrafo 1</p>
+    <p id="seg">Loren ipsum dolor sinet ame</p>
+    <p class="clase">Parrafo 3</p>
+    <div>
+        Capa 1
+    </div>
+    <div id="b">
+        <p>parrafo 1b</p>
+        <div>cuerpo</div>
+        <span>pie</span>        
+    </div>
+    <ul>
+        <li class="uno">1</li>
+        <li class="dos">2</li>
+        <li class="tres">3</li>
+        <li class="cuatro">4</li>
+        <li class="cink">5</li>
+    </ul>
+
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+    </table>
+    <p>
+        <a href="#">enlace 1 <br></a>
+        <a href="#">enlace 2 <br></a>
+        <a href="#">enlace 3 <br></a>
+        <a href="#">enlace 4 <br></a>
+        <a href="#">enlace 5 <br></a>
+    </p>
+
+    <button id="muestra">Ver Parrafos Invisibles</button>
+    <button id="esconde">Esconde parrafos consecutivos<br>
+        a este boton</button>
+
+    <p>pacopere 1</p>
+    <p>pacopere 2</p>
+    <p>pacopere 3</p>
+    <p></p>
+    <p>
+        <a href="#">Redirect to...</a>
+    </p>
+    <p style="display: none;">cuarto milenio</p>
+</body>
+</html>
