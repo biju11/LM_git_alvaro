@@ -10,33 +10,99 @@
 
         //declaramos una funcion en el momento en que el documento carga
         $(document).ready(function () {
+
+
+            //Esta funcion se accionara al posar el raton sobre los div
+            //$(this) se refiera a sobre quien estamos trabajando, en este caso los div invocados en la funcion raiz
             $("div").mouseover(function (){
-                //$(this) se refiera a sobre quien estamos trabajando, en este caso los div invocados en la funcion raiz
                 $(this).addClass("colorfondo");
+                if ($(this).hasClass("ejemplo")) {
+                    ($(this).addClass("colorletra"))
+                }
             });
+
+
+            //Esto deshace el cambio de arriba, es decir, cuando quitamos el raton
             $("div").mouseout(function (){
                 $(this).removeClass("colorfondo");
+                if ($(this).hasClass("ejemplo")) {
+                    ($(this).removeClass("colorletra"))
+                }
             });
+
+            //toggle es para hacer un "on/off" sobre la clase indicada
+            $("button.unBoton").click(function () {
+                $("div").toggleClass("ocultarmostrar");
+            });
+
+            $("button.botonDos").click(function () {
+                var estilo = $("span").attr("style");
+                $("div#estilospan").text(estilo);
+            });
+
+
+            //
+            $("button#boton3").click(function () {
+                $("div#estilospan").css("color","pink");
+            });
+
+            //
+            $("button#mostrarop").click(function () {
+                var sel = $("input:radio:checked").val();
+                $("span#result").text(sel);
+                $("#resul2").val(sel);
+                return false;
+            });
+
+            //Esta funcion hará que el campo de texto esté habilitado
+            $("button#activar").click(function () {
+                $("#resul3").prop("disabled",false);
+                $("#resul3").prop("placeholder","campo hablilitado");
+                return false;
+            });
+
+            //desmarcar checkbox
+            $("#desmarcar").click(function () {
+                $("#check").prop("checked",false);
+                return false;
+            })
+
         })
     </script>
 
     <!-- Apartado CSS sobre HTML -->
     <style>
+        table{
+            height: 90%;
+            width: 90%;
+        }
         div{
             height: 20%;
             width: 30%;
             vertical-align: middle;
             text-align: center;
-            border: 2px solid black;
             margin: 1%;
+            padding: 1%;
             font-family: monospace;
             font-size: 18px;
-            
+
         }
         .colorfondo{
             background: royalblue;
             color: white;
+            font-size: 24px;
+            border: 2px solid black;
         }
+        .colorletra{
+            color:black;
+            font-weight: bold;
+        }
+
+        .ocultarmostrar{
+            display: none;
+        }
+
+
     </style>
 
 
@@ -47,15 +113,70 @@
 
     <h1>Apuntes 2, Eventos</h1>
 
-    <div>
-        <span>Capa1</span>
-    </div>
-    <div>
-        <span>Capa2</span>
-    </div>
-    <div>
-        <span>Capa3</span>
-    </div>
+    <button class="unBoton">Mostrar / Ocultar</button>
+    <button class="botonDos"> Segundo Boton</button>
+    <button id="boton3">Añadir estilo</button>
+  
+    <table>
+        <tr>
+            <td>
+                <div>
+                    Capa1
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="ejemplo">
+                    Capa2
+                </div>
+            </td>
+            <td>
+                Esta capa es especial
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    Capa3
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span style="font-style: italic;">
+                    SPAN
+                </span>
+            </td>
+            <td>
+                <div id="estilospan">
+        
+                </div>
+            </td>
+        </tr>
+    </table>
+    <form>
+        <span>te voy a insultar:</span><br>
+        <input type="radio" name="rad" value="tonto">Opcion 1<br>
+        <input type="radio" name="rad" value="amamonao">Opcion 2<br>
+        <input type="radio" name="rad" value="orangutan">Opcion 3<br>
+        <input type="radio" name="rad" value="otaku">Opcion 4<br><br>
+        <button id="mostrarop">Mostrar Opcion</button><br><br>
+        <span id="result"></span><br>
+        <input type="text" name="texto" id="resul2">
+        <br><br><br>
+        <button id="activar">Activar Texto</button>
+        <input type="text" placeholder="no disponible..." disabled="disabled" id="resul3">
+        <br><br>
+        <input type="checkbox" value="1" id="check" checked>Sí <br>
+        <button id="desmarcar">Desmarcar el check de arriba</button>
+    </form>
+    
+
+
+    
+    
+    
 
 
     
