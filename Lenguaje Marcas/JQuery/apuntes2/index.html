@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jquery-3.6.0.js"></script>
+    <!-- Apartado JS sobre HTML -->
+    <script type="text/javascript">
+
+        //declaramos una funcion en el momento en que el documento carga
+        $(document).ready(function () {
+            $("div").mouseover(function (){
+                //$(this) se refiera a sobre quien estamos trabajando, en este caso los div invocados en la funcion raiz
+                $(this).addClass("colorfondo");
+            })
+            /*$("div").mousedown(function (){
+                $(this).addClass("");
+            })*/
+        })
+    </script>
+
+    <!-- Apartado CSS sobre HTML -->
+    <style>
+        div{
+            height: 15%;
+            width: 30%;
+            vertical-align: middle;
+            text-align: center;
+            border: 2px solid black;
+            margin: 1%;
+        }
+        .colorfondo{
+            background: royalblue;
+            color: white;
+        }
+    </style>
+
+
+
+    <title>JQuery Eventos</title>
+</head>
+<body>
+
+    <h1>Apuntes 2, Eventos</h1>
+
+    <div>
+        <span>Capa1</span>
+    </div>
+    <div>
+        <span>Capa2</span>
+    </div>
+    <div>
+        <span>Capa3</span>
+    </div>
+
+
+    
+</body>
+</html>
