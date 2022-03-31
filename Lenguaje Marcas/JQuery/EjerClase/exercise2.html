@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#vanisher").click(function () {
+                $("li.vanish").hide();
+            })
+        })
+    </script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <ul id="l1">Titulo A
+                    <li class="vanish">Elemento 1A</li>
+                    <li class="vanish">Elemento 2A</li>
+                    <li class="vanish">Elemento 3A</li>
+                    <li class="vanish">Elemento 4A</li>
+                    <li class="vanish">Elemento 5A</li>
+                </ul>
+            </td>
+            <td>
+                <ul> Titulo B
+                    <li class="trigger">Elemento 1B</li>
+                    <li class="trigger">Elemento 2B</li>
+                    <li class="trigger">Elemento 3B</li>
+                    <li class="trigger">Elemento 4B</li>
+                    <li class="trigger">Elemento 5B</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <button id="vanisher">Quitar Lista 1</button>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Clase</title>
+    <script src="../jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function() {
+          $("#tit1").click(function () {
+              $(this).addClass("ej1format");
+              $("#tit2").removeClass("ej1format");
+          });
+          $("#tit2").click(function () {
+              $(this).addClass("ej1format");
+              $("#tit1").removeClass("ej1format");
+          })  
+        })
+    </script>
+    <style>
+        .ej1format{
+            font-family: monospace;
+            background-color: royalblue;
+            color: white;
+            padding: 2%;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="tit1">Este es el primer Título</h1>
+    <div style="height: 90px; width: 80%;">
+    </div>
+    <h1 id="tit2">Este es el segundo Título</h1>
+</body>
+</html>

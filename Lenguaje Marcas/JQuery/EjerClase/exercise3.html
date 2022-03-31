@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#extrae").click(function () {
+                alert($("#txtt").text());
+            });
+            $("#modif_txt").click(function () {
+                $("#txtt").replaceWith("al carajo el texto<br/>");
+            });
+            $("#modif_tab").click(function () {
+                $("td").append("<br>paco<br>")
+            })
+        })
+    </script>
+    <style>
+        td{
+            padding: 2%;
+            margin: 2%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 3</h1>
+    <div style="background: lightyellow;">
+        <p id="txtt">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <br>
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit <br>
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br>
+            deserunt mollit anim id est laborum."</p>
+        <button id="extrae">Extrae texto</button>
+        <button id="modif_txt"> modifica texto</button>
+        <button id="modif_tab">Modifica texto del TD de tabla</button>
+    </div>
+    <div>
+        <table style="margin: 2%; background: black; color: white; font-weight: bold;font-size: x-small; padding: 2%;">
+            <tr>
+                <td>Celda A</td>
+                <td>Celda B</td>
+            </tr>
+            <tr>
+                <td>Celda C</td>
+                <td>Celda D</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

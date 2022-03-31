@@ -65,7 +65,31 @@
             $("#desmarcar").click(function () {
                 $("#check").prop("checked",false);
                 return false;
+            });
+
+
+            //estas son formas distintas de introducir y manipular texto en un div una vez accionado el boton
+            $("#inserta").click(function () {
+                $("#lacapita1").html("<p style='color: pink'>Este texto es de prueba, esta preformateado</p>");
+                $("#lacapita2").text("este texto no lleva formato");
+                //$("#lacapita1").prepend("<p>Esto se añadira al principio</p>")
+                //$("#lacapita1").append("<p>esto se añadirá al final")
+                //$("#lacapita1").before("<p>se añade antes que el prepend</p>")
+                //$("#lacapita1").after("<p>se añade despues del append</p>")
+                //$("#lacapita1").replaceWith("Este texto sustituye al que ya hubiera")
+
+                return false
+            });
+
+            $("#checkMail").click(function () {
+                if (($(this)).is(":checked")) {
+                    $("#capaMail").append("<input type='email' id='emailer'></input>")
+                }
+                else{
+                    $("#capaMail").remove();
+                }
             })
+
 
         })
     </script>
@@ -170,6 +194,17 @@
         <br><br>
         <input type="checkbox" value="1" id="check" checked>Sí <br>
         <button id="desmarcar">Desmarcar el check de arriba</button>
+        <br>
+        <br>
+        <button value="inserta" id="inserta">Insertar texto</button>
+        <br>
+        <div id="lacapita1">aqui hay un texto que será modificado</div>
+        <br>
+        <div id="lacapita2"></div>
+        <br>
+        <div id="capaMail">
+            <input type="checkbox" id="checkMail"> Quiere introducir su email?
+        </div>
     </form>
     
 
