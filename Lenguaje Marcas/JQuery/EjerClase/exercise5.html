@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <script src="../jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#pone").click(function() {
+                $("#txt").addClass("estiloso")
+            })
+            $("#quita").click(function () {
+                $("#txt").removeClass();
+            })
+        })
+    </script>
+    <style>
+        .estiloso{
+            font-size: 18px;
+            font-weight: bold;
+            color: red;
+            background: darkslategrey;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 5: Estilos en parrafos</h1>
+    <div>
+        <p id="txt">
+            Disponer un div con un conjunto <br>
+            de párrafos. Cuando se presione un botón <br> 
+            asociar una clase y cuando se presiona otro <br>
+            desasociarse de dicha clase.
+        </p>
+        <button id="pone">Dar formato al texto</button>
+        <br>
+        <button id="quita">Quita el formato al texto</button>
+    </div>
+</body>
+</html>

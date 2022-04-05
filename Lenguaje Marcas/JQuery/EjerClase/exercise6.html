@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6</title>
+    <script src="../jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").mouseover(function pfondo() {
+                $(this).css("background","black")
+            })
+            $("a").mouseout(function qfondo() {
+                $(this).css("background","")
+            })
+        })
+    </script>
+    <style>
+        a{
+            color: royalblue;
+            font-weight: bold;
+            font-family: monospace;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 6: Interaccion Mouse</h1>
+    <div>
+        <p>
+            <a href="http://google.com">A Google</a> <br>
+            <a href="http://facebook.com">A Facebook</a> <br>
+            <a href="http://forocoches.com">A Forocoches</a> <br>
+        </p>
+    </div>
+</body>
+</html>

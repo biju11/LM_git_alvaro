@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+    <script src="../jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(document).mousemove(function (){
+                $('#counter').text(event.pageX + "X, " + event.pageY+"Y ");
+              })
+        })
+    </script>
+</head>
+<body>
+    <h1>Ejercicio 7: Coordenadas del mouse</h1>
+    <div>
+        <p>
+            Capturar el evento mousemove a nivel del objeto <br>
+            document, este se dispara cada vez que desplazamos el mouse <br>
+            dentro de la página. <br>
+            Mostrar la coordenada donde se encuentra la flecha del mouse.
+        </p>
+        <table style="border: 4px solid rgb(88, 87, 87);">
+            <tr>
+                <td><span>Coordenadas:</span></td>
+                <td><span id="counter"></span></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

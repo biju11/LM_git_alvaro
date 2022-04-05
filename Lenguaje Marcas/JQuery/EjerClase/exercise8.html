@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8</title>
+    <script src="../jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").mousedown(function () {
+                $("table").css("background","lightyellow")
+            })
+            $("#btn").mouseup(function () {
+                $("table").css("background","")
+            })
+        })
+    </script>
+    <style>
+        table,td{
+            border-collapse: collapse;
+            border: 3px solid black;
+        }
+        td{
+            padding: 1%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 8: Dejar click pulsado</h1>
+    <div>
+        <table>
+            <tr>
+                <td>Elemento 1A</td>
+                <td>Elemento 1B</td>
+            </tr>
+        </table>
+        <br>
+        <button id="btn">Accionar el Formateo (Dejar pulsado)</button>
+    </div>
+</body>
+</html>
