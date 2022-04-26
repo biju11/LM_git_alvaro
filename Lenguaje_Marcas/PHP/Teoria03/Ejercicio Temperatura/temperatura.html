@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1 style="font-weight: bold">Temperatura: </h1>
+    <div>
+        <form action="temperatura.php">
+            <table>
+                <tr>
+                    <td><label for="temperatura">Introduzca Una temperatura...</label></td>
+                    <td><input type="number" name="temper" id="temper"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="magnitud" id="magnitud">
+                            <option value="celsius">Celsius</option>
+                            <option value="farenheit">Fahrenheit</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Envie Formulario">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

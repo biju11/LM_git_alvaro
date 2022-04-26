@@ -11,16 +11,44 @@
     <div>
         <table>
             <tr>
-                <td><label for="nombre">Introduzca su nombre ---> </label></td>
+                <td><label for="nombre">Introduzca su Nombre ---> </label></td>
                 <td><input type="text" name="nombre" id="nombre" autofocus></td>
             </tr>
             <tr>
-                <td><label for="apellido">Introduzca su apellido ---> </label></td>
-                <td><input type="text" name="apellido" id="apellido"></td>
+                <td><label for="passwd">Introduzca su Contraseña ---> </label></td>
+                <td><input type="password" name="passwd" id="passwd"></td>
             </tr>
             <tr>
-                <td><input type="submit" value="Enviar Nombre..."></td>
+                <td><label for="descripcion">Descripción:</label></td>
+                <td><input type="text"></td>
             </tr>
+            <tr>
+                <td><label for="opc">Opcion: </label></td>
+                <td><input type="checkbox" name="opc" id="opc" value="123"></td>
+            </tr>
+            <tr>
+                <td><label for="dato">Datos: </label></td>
+                <td><input type="radio" name="dato" id="dato">Dato 1</td>
+                <td><input type="radio" name="dato" id="dato">Dato 2</td>
+            </tr>
+            
+            <tr>
+                
+                <td>
+                    <hr>
+                    <p>Seleccione varios dejando pulsado CTRL</p>
+                    <hr>
+                    <select name="selec[]" id="selec" multiple>
+                        <option value="1">Opcion 1</option>
+                        <option value="2">Opcion 2</option>
+                        <option value="3">Opcion 3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Enviar Formulario..."></td>
+            </tr>
+
         </table>
     </div>
     </form>
