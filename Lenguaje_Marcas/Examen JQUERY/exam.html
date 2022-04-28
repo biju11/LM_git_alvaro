@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen JQUERY</title>
+    <meta name="description" content="Examen de Alvaro Manuel Vellido Pardo, 1º ASIR 21/22">
+    <script src="jquery-3.6.0.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            //Ejercicio 1
+            $("a").mouseover(function (){
+                $(this).addClass("fondoej1");
+            });
+            $("a").mouseout(function (param) {
+                $(this).removeClass("fondoej1");
+              });
+            
+            
+            //Ejercicio 2
+            $("td").mousedown(function () {
+                $(this).addClass("fondoej2")
+              });
+            $("td").mouseup(function () {
+            $(this).removeClass("fondoej2")
+            });
+
+            //Ejercicio 3
+            $("button#do").click(function () {
+                if ($("")) {
+                    
+                }
+                    
+                });
+            })
+            $("button#remov").click(function () {
+                
+            })
+            //
+
+
+          })
+    </script>
+    <style>
+        .fondoej1{
+            background-color: lightgreen;
+        }
+        .fondoej2{
+            background-color: royalblue;
+            color: white;
+            font-weight: bold;
+        }
+        td,tr{
+            border: 2px solid darkslategray;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 1</h1>
+    <div>
+        <a href="https://google.com" style="font-size: 32px;">Google</a>
+    </div>
+    <h1>Ejercicio 2</h1>
+    <div>
+        <table>
+            <tr>
+                <td>Celda 1</td>
+                <td>Celda 2</td>
+            </tr>
+        </table>
+    </div>
+
+    <h1>Ejercicio 3</h1>
+    <div id="ej3">
+        <p class="contar" id="1">
+            Crear una página con una capa con párrafos dentro. Justo debajo situar un botón que al pulsarlo debe poner el fondo amarillo a todos los párrafos que <br>
+            tienen menos de 100 caracteres.
+        </p>
+        <p class="contar" id="2">
+            este parrafo seguro que tiene menos de 100 caracteres
+        </p>
+        <p class="contar" id="3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip <br>
+            ex ea commodo consequat.
+        </p>
+        <p class="contar" id="4">
+            hola
+        </p>
+        <button id="do">Pone Fondo</button>
+        <button id="remov">Quita Fondo</button>
+    </div>
+</body>
+</html>
