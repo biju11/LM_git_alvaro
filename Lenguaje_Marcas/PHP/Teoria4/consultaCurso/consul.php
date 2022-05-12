@@ -1,8 +1,8 @@
 <?php
             $credents = mysqli_connect("localhost","root","usuario.1234","cursophp") or die("Problemas de Conexion");
-            $opcion = $_POST['sel'];
+            $opcion = $_REQUEST['sel'];
             echo"$opcion";
-            $sql = "SELECT idAlumno, nombre, mail, codigocurso FROM alumnos";
+            $sql = "SELECT idAlumno, nombre, mail, codigocurso FROM alumnos WHERE codigocurso=$opcion";
             $registros = mysqli_query($credents,$sql) or die("Problema en la consulta " . mysqli_error($credents));
 
 
