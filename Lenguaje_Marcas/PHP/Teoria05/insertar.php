@@ -10,21 +10,20 @@
 <body>
     <div class="container">
         <h2>Inserte Estudiante</h2>
-        
-    </div>
-</body>
-</html>
-
-<?php
+        <?php
     $credents = mysqli_connect("localhost","root","usuario.1234","cursophp") or die("Problemas de Conexion");
 
     $nombre = trim(htmlspecialchars(strip_tags($_REQUEST["nombre"]),ENT_QUOTES, "UTF-8"));
     $mail = trim(htmlspecialchars(strip_tags($_REQUEST["mail"]),ENT_QUOTES, "UTF-8"));
     $idcurso = trim(htmlspecialchars(strip_tags($_REQUEST["curso"]),ENT_QUOTES, "UTF-8"));
 
-    $sql = "INSERT INTO alumnos(nombre,mail,codigoCurso) VALUES ('$nombre','$mail','$idcurso')";
+    $sql = "INSERT INTO alumnos(nombre,mail,codigoCurso) VALUES ('$nombre','$mail',$idcurso)";
 
     mysqli_query($credents,$sql) or die ("Problemas en el Insert: ".mysqli_error($credents));
     mysqli_close($credents);
-    print "<h2>Alumno Inscrito</h2>";
+
 ?>
+    </div>
+</body>
+</html>
+
