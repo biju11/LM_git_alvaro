@@ -1,4 +1,32 @@
-<!DOCTYPE html>
+$(function(){
+
+    $("#poner").click(A);
+
+     function A(){
+
+    $("#capa3 p").each(B);
+
+     }
+
+    function B(){
+
+    if((this.textContent.length) < 100) { 
+
+     $(this).addClass("amarillo");
+
+    }
+
+    }
+
+    });
+
+    $("#quitar").click(function () {
+
+        $("#capa3 p").removeClass("amarillo");
+
+    });
+
+})<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

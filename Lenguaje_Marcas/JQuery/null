@@ -1,0 +1,23 @@
+$(function(){
+
+            $("#do").click(pone);
+            function pone(){
+            $("#capa3 p").each(index);
+             }
+            function index(){
+            if((this.textContent.length) < 100) { 
+             $(this).css("background","yellow");
+                }
+            }
+            });
+            $("#remov").click(function () {
+                $("#ej3 p").css("background","");
+            });
+
+
+
+
+
+
+
+
