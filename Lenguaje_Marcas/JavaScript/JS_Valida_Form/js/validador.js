@@ -11,7 +11,7 @@ function validar() {
     var pass = document.getElementById("pass").value;
     var repass = document.getElementById("repass").value;
 
-    /*if (correo.length == 0 || correo == "" 
+    if (correo.length == 0 || correo == "" 
         || web.length == 0 || web == "" 
         || edad.length == 0 || edad == "" 
         || pass.length == 0 || pass == "" 
@@ -22,12 +22,18 @@ function validar() {
                 String(correo).indexOf(".") == -1 && 
                 String(correo).indexOf("@") < String(correo).indexOf(".")) {
 
-    } */
+    } 
     
     if (String(correo).indexOf("@") == -1) {
         texto += "<li>@ necesaria en email</li>";
         correcto = false;
-    } else {
+    }
+
+    if (!String(correo).endsWith("@iestriana.com")) {
+        texto+="<li>no termina en '@iestriana.com'</li>";
+        correcto = false;
+    }
+    else {
         var posA = String(correo).indexOf("@");
         var posPunto = String(correo).indexOf(".", posA);
         if (posPunto == -1 || posPunto == posA + 1 
@@ -37,7 +43,7 @@ function validar() {
         }
     }
 
-    if (!String(web).startsWith("http://")) {
+    if (!String(web).startsWith("https://")) {
         texto += "<li>Web debe comenzar por http://</li>";
         correcto = false;
     }
