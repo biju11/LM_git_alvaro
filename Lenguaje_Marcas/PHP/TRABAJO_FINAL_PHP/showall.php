@@ -12,12 +12,11 @@
 </body>
 </html>
 
-
 <?php
                     $conexion = mysqli_connect("localhost", "root", "usuario.1234", "proyectophp") 
                                     or die("Problemas de Conexión");
 
-                    $sql = "SELECT mision.nombre, mision.vehiculo, mision.fecha_inicio,integrantes.nom_ape,integrantes.nacion,integrantes.edad FROM mision,integrantes WHERE mision.ID_tripulante=INTEGRANTES.ID_tripulante ORDER BY 3 asc";
+                    $sql = "SELECT mision.nombre, mision.vehiculo, mision.fecha_inicio,integrantes.nom_ape,integrantes.nacion,integrantes.edad FROM mision,integrantes WHERE mision.ID_tripulante=integrantes.ID_tripulante ORDER BY 3 asc";
 
                     $registros = mysqli_query($conexion, $sql) 
                             or die("Problemas en select:".mysqli_error($conexion));
